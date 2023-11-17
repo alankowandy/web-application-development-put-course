@@ -1,0 +1,291 @@
+@font-face {
+    font-family: Italian;
+    src: url(Semplicita/Semplicita\ Light.otf);
+}
+
+.tytul {
+    text-align: center;
+    font-size: 36px;
+    font-family: Italian;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title span {
+    margin: 0 10px; /* Add space between text and flags */
+}
+
+.flaga {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.podtytul {
+    text-align: center;
+    font-size: 24px;
+    font-family: Italian;
+}
+
+header {
+    background-color: #008C45;
+    color: #F4F5F0;
+    padding: 10px;
+    margin: -8px;
+}
+
+nav {
+    background-color: #008C45;
+    margin: -8px;
+}
+
+.menu {
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: -2px;
+    margin-left: -2px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #F4F5F0;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Italian;
+    display: block;
+    padding: 12px;
+}
+
+.menu::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu a:hover {
+    color: black;
+    transition: color 0.5s;
+}
+
+.ulubione-dania {
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Italian;
+}
+
+.dania-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.danie {
+    /* display: flex;
+    align-items: center; */
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.danie:hover, .danie:focus, .danie:active {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+}
+
+.danie a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent */
+    display: flex; /* Make the anchor tag a block-level element */
+    align-items: center;
+}
+
+.danie img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.danie-opis {
+    flex: 1;
+}
+
+.danie-opis h3 {
+    font-family: Italian;
+    margin-top: 0;
+}
+
+.tekst {
+    font-family: Italian;
+}
+
+body {
+    margin: 5;
+    padding: 0;
+    font-family: Italian;
+    background-color: #F4F5F0;
+}
+
+.news-slider {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.slider-item {
+    width: 26%; /* Adjust the width as needed */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure rounded corners are applied */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.slider-item:hover, .slider-item:focus, .slider-item:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.slider-item img {
+    width: 100%;
+    height: 270px;
+    border-bottom: 1px solid #ddd; /* Optional: Add a border between image and text */
+}
+
+.slider-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slider-item h2 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.slider-item p {
+    margin: 0 10px 10px;
+}
+
+.tekst {
+    padding: 0px 20px 10px 20px;
+    text-align: justify;
+}
+
+.tekst h2 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.share-favorite-meal {
+    background-color: #F4F5F0;
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+    font-family: Italian;
+}
+
+.share-favorite-meal h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.share-favorite-meal label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.share-favorite-meal input {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.share-favorite-meal button {
+    background-color: #008C45;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.share-favorite-meal button:hover {
+    background-color: #006634;
+}
+
+.fatfooter {
+    background-color: #CD212A;
+    color: #F4F5F0;
+    padding: 20px;
+    margin: -8px;
+    text-align: center;
+    font-family: Italian;
+}
+
+.kontakt {
+    margin-top: 15px; /* Add some top margin to the kontakt div */
+}
+
+.kontakt a {
+    text-decoration: none;
+    color: #F4F5F0;
+}
+
+.kontakt a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add some top margin to the social-media div */
+}
+
+.social-media a {
+    margin: 0 10px; /* Add margin to each social media link for spacing */
+}
+
+.social-media img {
+    width: 30px; /* Adjust the width of the social media icons */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Make the icons circular */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.social-media img:hover {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
