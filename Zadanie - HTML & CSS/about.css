@@ -4,8 +4,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: Italian;
 }
 
@@ -37,7 +35,7 @@ main {
     display: block;
 }
 
-.o-mnie h2 {
+.o-mnie > h2 {
     color: #008C45;
 }
 

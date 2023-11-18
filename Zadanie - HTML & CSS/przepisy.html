@@ -6,131 +6,252 @@
     <title>Moja ulubiona kuchnia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Hover-master/css/hover.css" media="all">
+    <link rel="stylesheet" href="przepisy.css">
 </head>
 <body>
     <header>
-        <div class="naglowek">
+        <article class="naglowek">
             <h1 class="tytul">
                 <img src="pictures/italy.png" alt="Flaga Włoch" class="flaga">
                 <span>Kuchnia Włoska</span>
                 <img src="pictures/italy.png" alt="Flaga Włoch" class="flaga">
             </h1>
             <h2 class="podtytul">Najlepsza kuchnia na świecie!</h2>
-        </div>
+        </article>
     </header>
 
-<nav class="menu">
-    <ul>
-        <li class="hvr-sweep-to-top"><a href="index.html">Strona Główna</a></li>
-        <li class="hvr-sweep-to-top"><a href="aktualnosci.html">Aktualności</a></li>
-        <li class="hvr-sweep-to-top"><a href="przepisy.html">Przepisy</a></li>
-        <li class="hvr-sweep-to-top"><a href="about.html">O mnie</a></li>
-    </ul>
-</nav>
-
-<main>
-    <section class="ulubione-dania">
-        <h2>Moje ulubione dania z kuchni włoskiej</h2>
-        <ul class="dania-lista">
-            <li class="danie">
-                <a href="przepisy.html">
-                    <img src="pictures/carbonara.jpg" alt="Spaghetti Carbonara">
-                    <div class="danie-opis">
-                        <h3>Spaghetti Carbonara</h3>
-                        <p>Potrawa złożona z makaronu, jajek, pancetty lub guanciale, sera pecorino romano lub parmezanu oraz czarnego pieprzu.</p>
-                    </div>
-                </a>
-            </li>
-            <li class="danie">
-                <a href="przepisy.html">
-                    <img src="pictures/bolognese.jpg" alt="Spaghetti Bolognese">
-                    <div class="danie-opis">
-                        <h3>Spaghetti Bolognese</h3>
-                        <p>Sos mięsny pochodzący z włoskiej Bolonii. Używa się głównie wieprzowiny i wołowiny, Guanciale, zestawu warzyw, czyli cebuli, marchewki i selera naciowego, oliwy, pomidorów i czerwonego wina.</p>
-                    </div>
-                </a>
-            </li>
-            <li class="danie">
-                <a href="przepisy.html">
-                    <img src="pictures/risotto.jpg" alt="Risotto">
-                    <div class="danie-opis">
-                        <h3>Risotto</h3>
-                        <p>Popularna potrawa północnej kuchni włoskiej, gotowana z dodatkiem bulionu do uzyskania kremowej konsystencji. Istnieje wiele przepisów gotowania risotta, wszystkie jednak oparte są na użyciu odpowiedniej odmiany ryżu, a procedura zwykle jest podobna, różnią się jedynie składniki w zależności od rodzaju dania czy regionu, z jakiego dane risotto pochodzi.</p>
-                    </div>
-                </a>
-            </li>
-            <li class="danie">
-                <a href="przepisy.html">
-                    <img src="pictures/pizza.jpg" alt="Pizza Margherita">
-                    <div class="danie-opis">
-                        <h3>Pizza Margherita</h3>
-                        <p>Rodzaj pizzy w kuchni włoskiej, pochodzącej z Neapolu, pokrytej sosem pomidorowym, mozarellą, świeżą bazylią i oliwą z oliwek.</p>
-                    </div>
-                </a>
-            </li>
-            <li class="danie">
-                <a href="przepisy.html">
-                    <img src="pictures/tiramisu.jpg" alt="Tiramisu">
-                    <div class="danie-opis">
-                        <h3>Tiramisu</h3>
-                        <p>Deser złożony z warstwy biszkoptu nasączonej bardzo mocną kawą espresso, na którą nakłada się warstwę kremu z sera mascarpone, żółtek jaj kurzych i cukru, a całość posypuje się warstwą grubo zmielonych płatków gorzkiej czekolady.</p>
-                    </div>
-                </a>
-            </li>
+    <nav class="menu">
+        <ul>
+            <li class="hvr-sweep-to-top"><a href="index.html">Strona Główna</a></li>
+            <li class="hvr-sweep-to-top"><a href="aktualnosci.html">Aktualności</a></li>
+            <li class="hvr-sweep-to-top"><a href="przepisy.html">Przepisy</a></li>
+            <li class="hvr-sweep-to-top"><a href="about.html">O mnie</a></li>
         </ul>
-    </section>
-</main>
+    </nav>
+
+
 
 <main>
-    <section class="news-list">
+    <div class="przepisy-lista">
         <article class="przepis">
-            <img src="pictures/angry_italian.jpg" alt="News 1">
-            <div class="news-content">
-                <h2>Włoski szef kuchni atakuje na wizji!</h2>
-                <p>This is the content of News 1.</p>
-            </div>
-            
+            <img src="pictures/carbonara.jpg" alt="Przepis 1">
+            <div class="zawartosc">
+                <section class="skladniki">
+                    <h2>Spaghetti Carbonara</h2>
+                    <h3>Składniki:</h3>
+                    <ul>
+                        <li>5 L Wody</li>
+                        <li>Szczypta soli kamiennej</li>
+                        <li>300 gramów Makaronu spaghetti lub Spaghettoni/Rigatoni/Paccheri</li>
+                        <li>150 gramów Guanciale - Polędwica wieprzowa lub Pancetta</li>
+                        <li>200 gramów Serka Pecorino (2 szklanki)</li>
+                        <li>4 Jajka</li>
+                        <li>Pieprz</li>
+                    </ul>
+                </section>
+                <section class="kroki">
+                    <h3>Kroki:</h3>
+                    <ol>
+                        <li>Spaghetti carbonara robi się bardzo szybko, więc na początek zagotuj wodę do gotowania makaronu w dużym garnku.</li>
+                        <li>Gotuj makaron zgodnie z instrukcjami na opakowaniu pod względem czasu, upewniając się, że makaron jest al dente.</li>
+                        <li>Zdejmij skórę z guanciale (upewniając się, że zostawiasz pieprzony/prażony skórę), a następnie pokrój je w cienkie paski.</li>
+                        <li>Na gazie włącz niewielki do średniego ogień i umieść dużą patelnię. Dla idealnego przepisu na spaghetti carbonara dodaj guanciale na patelnię, pozwól mu gotować się bardzo powoli, a sam utworzy swoje pyszne oleje.</li>
+                        <li>Doprowadź guanciale do wrzenia i delikatnie je usmaż.</li>
+                        <li>Weź swoją misę i dodaj 4 jajka, następnie energicznie je ubij.</li>
+                        <li>Następnie dodaj ser pecorino, a także dużo pieprzu przed dokładnym wymieszaniem. To stworzy pyszny sos, który dodasz do makaronu.</li>
+                        <li>Kiedy makaron ugotuje się do preferowanego smaku, za pomocą cążek wyjmij makaron z wrzącej wody i dodaj go bezpośrednio na patelnię, upewniając się, że małe kropelki wody mieszają się również z patelnią.</li>
+                        <li>Wyłącz płytę grzejną, aby makaron i guanciale przestali się gotować.</li>
+                        <li>Następnie, za pomocą chochli, pobierz pełną chochlę wody z garnka i dodaj ją do jajka i kremu serowego, następnie dokładnie wymieszaj widelcem.</li>
+                        <li>Teraz ponownie włącz płytę na małym ogniu, dodaj trochę wody z makaronu na patelnię, a teraz wlej krem na wierzch, następnie wymieszaj to za pomocą cążek - bądź delikatny, ale szybki! Pozwól mu się przegotować, ale nie pozwól, aby jajka zrobiły się na jajecznicy, bo wtedy skończysz z frittatą!</li>
+                        <li>Cały czas mieszaj krem, aż zacznie lekko gęstnieć, wymieszaj go i podawaj.</li>
+                    </ol>
+                </section>
+            </div>    
         </article>
 
         <article class="przepis">
-            <img src="pictures/dna.png" alt="News 2">
-            <div class="news-content">
-                <h2>Sekretna Receptura Włoskiego DNA: Makaron we Krwi!</h2>
-                <p>Wśród tajemniczych sekretów genetyki, jedno społeczeństwo utrzymuje, że ich DNA to nic innego jak skomplikowana struktura makaronu. Otóż, włoscy naukowcy twierdzą, że w ich żyłach płynie nie tylko krew, ale również smaczny i dobrze ugotowany makaron. Jak to możliwe? Oto śmieszna historia, która wyjaśnia fenomen włoskiego DNA.</p>
-
-                <p>W małej wiosce we Włoszech, gdzie każda rodzina utrzymuje, że ich przodkowie byli mistrzami w produkcji makaronu, naukowcy postanowili zbadać tę fascynującą teorię. Przez wiele lat przeprowadzali badania na lokalnej społeczności, próbując znaleźć dowody potwierdzające teorie lokalnych mieszkańców.</p>
-                    
-                <p>Pewnego dnia profesor Antonella Spaghettini, znana na całym świecie jako guru makaronologii (fikcyjna dziedzina nauki), odkryła coś, co zachwyciło wszystkich. Podczas eksperymentów w laboratorium natrafiła na tajemniczy składnik w próbkach DNA włoskich dawców. Okazało się, że w strukturze DNA istnieją sekwencje, które przypominają spiralne kształty makaronu.</p>
-                    
-                <p>Profesor Spaghettini entuzjastycznie ogłosiła swoje odkrycie podczas konferencji naukowej, mówiąc: "To absolutnie niewiarygodne! Nasze badania dowodzą, że włoskie DNA to nie tylko geny, ale również ukryte przepisy na makaron, przekazywane z pokolenia na pokolenie!"</p>
-                    
-                <p>Społeczność naukowa była początkowo sceptyczna wobec tego nietypowego odkrycia, ale profesor Spaghettini postanowiła udowodnić swoją teorię praktycznie. Wraz ze swoim zespołem postanowiła stworzyć specjalny eksperyment, w którym próbki DNA były umieszczane w garnkach z gotującym się makaronem. I o dziwo, okazało się, że makaron gotowany w obecności włoskiego DNA smakował bardziej tradycyjnie!</p>
-                    
-                <p>Media na całym świecie zaczęły podążać za tą zabawną teorią, tworząc nagłówki takie jak "Włoscy Naukowcy Odkrywają Tajemnicę Rodzinnych Przepisów na DNA!" czy "Geny czy Penne? Włoska Tajemnica Makaronu Wreszcie Rozwiązana!"</p>
-                    
-                <p>Odkrycie profesora Spaghettini stało się światowym fenomenem, a włoska społeczność z dumą podkreśla, że ich krew to nie tylko jednostki genetyczne, ale także sekretna receptura na najlepszy makaron. Czy to prawda, czy tylko zabawna opowieść? Trudno powiedzieć, ale jedno jest pewne - włoski makaron ma teraz dodatkowego smaczku!</p>
-            </div>
+            <img src="pictures/bolognese.jpg" alt="Przepis 2">
+            <div class="zawartosc">
+                <section class="skladniki">
+                    <h2>Bolognese</h2>
+                    <h3>Składniki:</h3>
+                    <ul>
+                        <li>1 Czerwona cebula, posiekana</li>
+                        <li>3 Łodygi selera, posiekane</li>
+                        <li>3 Marchewki, posiekane</li>
+                        <li>500 gram Mielonej wieprzowiny</li>
+                        <li>300 gram Mielonego mięsa wołowego</li>
+                        <li>200 gram Mielonej cielęciny</li>
+                        <li>1 l Italian tomato passata (przecieru pomidorowego)</li>
+                        <li>400 gram Pomidorów, obranych</li>
+                        <li>150 gram Koncentratu pomidorowego</li>
+                        <li>Oliwa z oliwek extra virgin</li>
+                        <li>1 szklanka Czerwonego wina</li>
+                        <li>1 kubek Pełnotłustego mleka</li>
+                        <li>Sól i pieprz</li>
+                        <li>1-2 litry Wody do zagotowania w czajniku</li>
+                    </ul>
+                </section>
+                <section class="kroki">
+                    <h3>Kroki:</h3>
+                    <ol>
+                        <li>Umieść duży garnek na kuchence (średnie ogrzewanie), dodaj obficie oliwy z oliwek extra virgin i po rozgrzaniu dodaj cebulę.</li>
+                        <li>Gdy cebula zacznie nabierać połysku i złotego koloru, dodaj marchew, seler, i wymieszaj, pozostawiając do gotowania przez 4-5 minut.</li>
+                        <li>Następnie dodaj ½ szklanki czerwonego wina (118 ml) do autentycznego sosu bolońskiego i pozostaw do duszenia na małym ogniu przez kilka minut lub do momentu, aż wino wyparuje.</li>
+                        <li>Dodaj mielone mięso i rozdrobnij je za pomocą drewnianej łyżki i/lub widelca, doprawiając tylko solą i pieprzem.</li>
+                        <li>Czasami mieszaj, aby mieć pewność, że mięso jest dokładnie ugotowane, pozostawiając je do zrumienienia.</li>
+                        <li>Gdy woda wyparuje, wymieszaj drugą połowę szklanki czerwonego wina.</li>
+                        <li>Całkowity czas gotowania autentycznego sosu bolońskiego to około 4-5 godzin, co sprawi, że mięso stanie się bardziej miękkie.</li>
+                        <li>Po ponownym odparowaniu wina, wymieszaj przecier pomidorowy, koncentrat i obrane pomidory.
+                        Rozgnieć pomidory, używając drewnianej łyżki podczas mieszania.</li>
+                        <li>Po 1,5 godziny dodaj do garnka 1 litr/4,2 szklanki wrzącej wody i wymieszaj. W tym momencie spróbuj sosu i dopraw solą według własnego gustu - dodaj tylko, jeśli chcesz więcej, ponieważ żadne inne przyprawy nie są potrzebne do autentycznego sosu bolońskiego!</li>
+                        <li>Następnie, po kolejnej godzinie, dodaj więcej wody - sztuczką jest dodawanie wody, gdy sos wydaje się suchy, co zagęści mieszaninę i pozwoli mięsu stanie się bardziej miękkie.
+                        Pozwól sosowi lekko bulgotać, ale niech nie tryska wszędzie. Jeśli zbyt mocno się gotuje, zmniejsz ogień.</li>
+                        <li>Gdy sos jest jeszcze 30 minut od gotowości, zagotuj 5 litrów wody w drugim garnku, dodaj łyżkę soli kamiennej, pozostawiając ją do rozpuszczenia.</li>
+                        <li>Po gotowaniu sosu przez około 5 godzin, zdejmij go z ognia i pozostaw do odpoczynku.
+                        Dodaj wybrany makaron do gotującej się wody i gotuj zgodnie z instrukcjami na opakowaniu.</li>
+                        <li>Podczas gotowania makaronu, przygotuj dużą patelnię do mieszania!</li>
+                        <li>Następnie dodaj filiżankę pełnotłustego mleka do sosu i wymieszaj, po czym postaw go z powrotem na kuchence na 5 minut.</li>
+                        <li>Na koniec, umieść patelnię na kuchence na niskim ogniu, dodaj obfite łyżki (lub dwie!) sosu bolońskiego, pokrywając dno.</li>
+                        <li>Następnie dodaj odcedzony makaron do patelni wraz z filiżanką wody z makaronu.
+                        Wymieszaj, aż makaron będzie całkowicie pokryty, a następnie dodaj kolejną obfitą ilość autentycznego sosu bolońskiego i ponownie wymieszaj.</li>
+                    </ol>
+                </section>
+            </div>    
         </article>
 
         <article class="przepis">
-            <img src="pictures/pizzanews.png" alt="News 3">
-            <div class="news-content">
-                <h2>Ewolucja Pizzy: Jak Te Niezwykłe Placki Zdobyły Świat</h2>
-                <p>W dzisiejszych czasach trudno sobie wyobrazić świat bez pizzy. To jedno z nielicznych uniwersalnych źródeł radości, które jednoczą ludzi na całym świecie. Ale czy kiedykolwiek zastanawialiście się, jak pizza stała się tym, co dziś wszyscy kochamy? Oto śmieszna historia o ewolucji pizzy.</p>
-
-                <p>Początek tej niesamowitej opowieści sięga zamierzchłych czasów w starożytnym Rzymie. Legendarny kucharz, Noniusz Peperonius, próbując wymyślić coś, co poprawiłoby nastrój cesarza, wyruszył w kulinarne podboje. Po wielu eksperymentach culinarium (coś jak laboratorium dla kucharzy) Noniusz natrafił na genialny pomysł: placki z pieca, pokryte sosem pomidorowym, serem i wszelkimi dostępnymi składnikami.</p>
-                    
-                <p>Niestety, Cesarski Krąg Kulinarny nie był przekonany do tego nowego dania. Nie mogąc znieść porażki, Noniusz postanowił zorganizować własny „Turniej Pizzy” na terenie Koloseum. Walka była zacięta, a mieszkańcy Rzymu nie wiedzieli, czy mają zaklasyfikować to jako danie główne czy przekąskę. Ostatecznie, podczas finałowej bitwy, pizza pokonała konkurencję, a tłumy wybuchły radością. Noniusz Peperonius stał się bohaterem miasta, a pizza zdobyła serca i żołądki ludzi na zawsze.</p>
-                    
-                <p>Wraz z upływem czasu, pizza przeniosła się z Italii do Ameryki, gdzie przyjęła amerykańską tożsamość, stając się jednocześnie gwiazdą filmów, ikoną popkultury i prezydentem lokalnych przyjęć. Wkrótce pojawiły się nowe odmiany pizzy, w tym pizza hawajska (kto by pomyślał, że ananas może być tak kontrowersyjny?) oraz pizza z nadzieniem, której fani zaczęli nazywać „Pizzaception”.</p>
-                    
-                <p>Dziś pizza jest dostępna w niemal każdym zakątku świata. Wysoko wyspecjalizowane jednostki wojskowe używają jej jako podstawowego środka komunikacji, a naukowcy szukają sposobu na przesyłanie informacji genetycznych za pomocą specjalnie spreparowanego sosu pomidorowego. Jest to jedno z niewielu dań, które zjada się na gorąco, na zimno, w pracy, w domu, w kinie i na łódce.</p>
-                    
-                <p>Tak więc, drodzy czytelnicy, teraz wiecie, jak pizza stała się symbolem jedności, radości i czasem lekkiego zamieszania gastronomicznego. Niezależnie od tego, czy jesteś zwolennikiem ananasa na pizzy czy tradycyjnego margherita, pamiętaj, że pizza to nie tylko jedzenie. To emocje, to wspomnienia, to kawałek historii, który możemy spożywać z uśmiechem na twarzy.</p>
-            </div>
+            <img src="pictures/risotto.jpg" alt="Przepis 3">
+            <div class="zawartosc">
+                <section class="skladniki">
+                    <h2>Risotto</h2>
+                    <h3>Składniki:</h3>
+                    <ul>
+                        <li>½ Cebuli brunatnej, posiekana na małe kawałki</li>
+                        <li>1 pęczek Pietruszki, świeża i posiekana</li>
+                        <li>Oliwa z oliwek extra virgin Tyle, ile potrzeba</li>
+                        <li>400 gram Grzybów borowików</li>
+                        <li>300 gram Ryżu Carnaroli</li>
+                        <li>½ szklanki Białego wina</li>
+                        <li>50 gram Masła</li>
+                        <li>50 gram Serka Parmezanu Reggiano</li>
+                        <li>1 litr Wywaru warzywnego</li>
+                        <li>1 łyżka Soli</li>
+                    </ul>
+                </section>
+                <section class="kroki">
+                    <h3>Kroki:</h3>
+                    <ol>
+                        <li>Umieść dużą patelnię na średnim ogniu. Dodaj 3 łyżki oliwy z oliwek extra virgin.</li>
+                        <li>Pozostaw, aby się lekko podgrzało, a następnie dodaj grzyby, mieszając je przez olej i dusząc.</li>
+                        <li>Dodaj szczyptę soli i połowę świeżo posiekanej pietruszki, następnie dokładnie wymieszaj.</li>
+                        <li>Gotuj przez około 15 minut, mieszając co jakiś czas drewnianą łyżką, aby upewnić się, że są miękkie i soczyste.</li>
+                        <li>Weź dużą garnek lub głęboką patelnię i postaw na średnim ogniu.
+                        Dodaj posiekaną cebulę i pozostaw do duszenia, aż lekko się zezłoci. Delikatnie wymieszaj je przez olej za pomocą drewnianej łyżki i gotuj przez około 10 minut.</li>
+                        <li>Kiedy cebula zacznie lekko zmieniać kolor na złoty, sprawdź grzyby - powinny być już gotowe! Wyłącz kuchenkę i odstaw je na bok.</li>
+                        <li>Następnie dodaj ryż do patelni (z cebulą) i wymieszaj (zawsze używając drewnianej łyżki!). Ryż musi lekko przypiekać się na patelni przez około 4 minuty - często mieszaj!</li>
+                        <li>Po ¾ minuty dodaj ½ szklanki wina i śledź czas. Od tego momentu gotuj zgodnie z czasem podanym na opakowaniu - oczywiście smakując, aby się upewnić!</li>
+                        <li>Wymieszaj ryż z winem, mieszając go, a od tego momentu chcesz, aby ryż pozostał wilgotny, więc po jego odparowaniu zacznij dodawać bulion warzywny, jedną chochlę naraz.</li>
+                        <li>Po dodaniu bulionu pozostaw go do odparowania, zanim dodasz kolejną porcję. Kluczowy krok: CIĄGLE MIESZAĆ przez cały ten proces i nie zwiększać temperatury, ryż najlepiej gotować delikatnie i wolno.</li>
+                        <li>Kilka minut przed końcem (zalecanego) czasu gotowania dodaj grzyby (zostawiając małą porcję na bok) i dodaj kolejne ½ chochli bulionu.</li>
+                        <li>Wymieszaj, a następnie dodawaj więcej bulionu, ponieważ grzyby szybko wchłaniają płyn. Ciągle mieszaj!</li>
+                        <li>W tym momencie spróbuj ryżu, aby upewnić się, że jest dobrze ugotowany, a następnie usuń z ognia, gdy zadowolony jesteś z konsystencji.</li>
+                        <li>Natychmiast dodaj masło, a podczas gdy się rozpuszcza, wymieszaj z startym parmezanem reggiano (śmiało dodaj więcej!). Mieszaj, aż oba składniki całkowicie się rozpuszczą... następnie podawaj!</li>
+                    </ol>
+                </section>
+            </div>    
         </article>
-        <!-- Add more articles for each news item -->
-    </section>
+
+        <article class="przepis">
+            <img src="pictures/pizza.jpg" alt="Przepis 4">
+            <div class="zawartosc">
+                <section class="skladniki">
+                    <h2>Pizza Margherita</h2>
+                    <h3>Składniki:</h3>
+                    <ul>
+                        <li>1 kg Mąki do pizzy Napoletanej Le 5 Stagioni (około 4,25 szklanki)</li>
+                        <li>600 ml Wody (około 2,5 szklanki), temperatura pokojowa</li>
+                        <li>2 gramy Świeżych drożdży</li>
+                        <li>30 gramów Soli morskiej (2 łyżki)</li>
+                        <li>1 puszka Pomidorów San Marzano 400 g/14 uncji</li>
+                        <li>Garść sera Pecorino Romano</li>
+                        <li>100 gramów Mozzarelli Fior di latte</li>
+                        <li>Sól</li>
+                        <li>Oliwa z oliwek extra virgin</li>
+                    </ul>
+                </section>
+                <section class="kroki">
+                    <h3>Kroki:</h3>
+                    <ol>
+                        <li>KROK PIERWSZY: JAK ZROBIĆ CIASTO NA PIZZĘ NAPOLETANĘ DO KLASYCZNEJ PIZZY MARGHERITA</li>
+                        <li>Wlej 600 ml wody do miski i rozpuść sól morską, mieszając ją rękoma.
+                        Dodaj 100 g mąki do wody i wymieszaj, używając rąk.</li>
+                        <li>Gdy mąka się rozpuści, dodaj świeże drożdże, rozbijając je ponownie w wodzie, aż znikną!</li>
+                        <li>W tym momencie stopniowo dodawaj mąkę, mieszając, a kiedy ciasto stanie się gęstsze i zacznie się formować, przenieś je na blat (nie zapomnij wcześniej posypać blatu mąką!)</li>
+                        <li>Odetnij nadmiar lepkiego ciasta z rąk, pozwalając mu spaść do miski, i wyrabiaj je przez ciasto.
+                        Aby wyrabiać, naciskaj do przodu i zaginać z powrotem, powtarzając ten proces i pracując ciasto, aż uzyskasz miękką i elastyczną konsystencję.</li>
+                        <li>Kiedy jesteś zadowolony z ciasta, przykryj je i pozostaw do odpoczynku przez 18 godzin w temperaturze pokojowej.</li>
+                        <li>Po tym czasie stwórz kulki pizzy o wadze 270 g. Umieść je na tacy, przykryj i pozostaw do wyrośnięcia przez kolejne 4-6 godzin.</li>
+                        <li>Podawaj natychmiast, posypując dodatkowym parmezanem i pieprzem.</li>
+                        <li>KROK DRUGI: ROZCIĄGANIE KLASYCZNEGO CIASTA NA PIZZĘ MARGHERITA</li>
+                        <li>Posyp trochę mąki na wierzch deski.
+                        Wyjmij jedną z kulek z tacy, używając niewielkiej ilości mąki po bokach, aby nie przywierała – do rąk i tacy – i umieść na blacie.</li>
+                        <li>To ciasto jest bardzo elastyczne, więc łatwo je rozciągniesz. Zacznij tworzyć okrągłą podstawę, pracując palcami od dołu aż do góry, upewniając się, że zostawiasz obrzeże 1 cm po obwodzie.</li>
+                        <li>Obróć pizzę do góry nogami i powtórz proces. To spycha całe powietrze na dół i do krawędzi.</li>
+                        <li>Powtórz to – delikatnie – dwukrotnie z każdej strony, następnie podnieś podstawę, przekręć ją w jedną rękę i na blat, pomagając jej rozciągnąć się dalej i przyjąć formę koła.</li>
+                        <li>KROK TRZECI: PRZYGOTOWANIE KLASYCZNEJ PIZZY MARGHERITA</li>
+                        <li>Zacznij od wylania puszki pomidorów San Marzano do miski. Można je rozgnieść rękoma lub mikserem ręcznym, starając się uzyskać gęstą konsystencję, więc nie przesadzaj z nimi!</li>
+                        <li>Dodaj szczyptę soli i wymieszaj przez bazylie, całe lub rozrywając kawałki rękami.</li>
+                        <li>Wlej trochę sosu z pomidorów San Marzano na podstawę i rozprowadź go za pomocą spodniej strony łyżki.</li>
+                        <li>Pokrój ser Fior di latte mozzarella na kawałki i rozłóż ich obficie na wierzchu pysznego sosu San Marzano - idealne połączenie do klasycznej pizzy margherity!</li>
+                        <li>Posyp na wierzchu Pecorino Romano i dodaj kilka listków bazylii przed ostatnim skropieniem oliwą z oliwek extra virgin.</li>
+                        <li>KROK CZWARTY: JAK PIEC KLASYCZNĄ PIZZĘ MARGHERITA</li>
+                        <li>Korzystając z pieca opalanego drewnem o temperaturze 450°C, pizzę należy piec maksymalnie przez 90 sekund.</li>
+                        <li>Należy ją obrócić o 180° w połowie czasu - koniecznie sprawdź spód między czasie, aby upewnić się, że nie przypali się.</li>
+                    </ol>
+                </section>
+            </div>    
+        </article>
+
+        <article class="przepis">
+            <img src="pictures/tiramisu.jpg" alt="Przepis 5">
+            <div class="zawartosc">
+                <section class="skladniki">
+                    <h2>Tiramisu</h2>
+                    <h3>Składniki:</h3>
+                    <ul>
+                        <li>2 świeże organiczne jajka, ekstra duże</li>
+                        <li>1 opakowanie sera mascarpone, 250 g</li>
+                        <li>100 gramów biszkoptów Savoiardi</li>
+                        <li>2 łyżki białego cukru</li>
+                        <li>350 ml kawy espresso, 1 1/2 szklanki, przygotowanej wcześniej i ostudzonej</li>
+                        <li>1 tabliczka czekolady gorzkiej lub mlecznej</li>
+                        <li>Czekolada w proszku</li>
+                        <li>Cukier puder</li>
+                    </ul>
+                </section>
+                <section class="kroki">
+                    <h3>Kroki:</h3>
+                    <ol>
+                        <li>Zacznij od przygotowania świeżej kawy i pozwolenia jej wystarczająco długo ostygnąć. Gdy kawa ostygnie, nalej ją do miski.</li>
+                        <li>Kolejnym krokiem, gdy kawa ostygnie, jest oddzielenie 2 białek jajek od żółtek, umieszczenie ich w osobnych miseczkach, a następnie dodanie do każdej jednej łyżki białego cukru.</li>
+                        <li>Teraz ubijaj każdą miseczkę osobno za pomocą miksera ręcznego. Możesz także ubijać te składniki ręcznie, ale wynik jest znacznie puszystszy!</li>
+                        <li>Białka jajek powinny ładnie spienić się - ale upewnij się, że nie przesadzisz, bo się rozbiją i zsiądą.</li>
+                        <li>Dodaj odcedzone spaghetti do patelni z boczkiem, mieszaj, aby makaron pokrył się tłuszczem z boczku.</li>
+                        <li>Podziel mascarpone na dwie równe części, dodając połowę do mieszanki z żółtkiem, a drugą połowę do miseczki z białkiem jajka.</li>
+                        <li>Za pomocą łopatki delikatnie wymieszaj mascarpone, zaczynając od miski z białkiem jajka.</li>
+                        <li>Dla autentycznego przepisu na tiramisu musisz użyć biszkoptów Savoiardi lub Lady Fingers. Zamocz kilka jednocześnie w misce z kawą, zwilżając obie strony jednocześnie, przytrzymując przez 3 sekundy, zanim umieścisz je w naczyniu żaroodpornym lub prostokątnym.</li>
+                        <li>Ułóż biszkopty blisko siebie, delikatnie dociskając je do siebie, aby nie było przerw, i upewnij się, że łamiesz ewentualne biszkopty i używasz ich do wypełnienia rogów.</li>
+                        <li>Po utworzeniu dolnej warstwy zgodnie z autentycznym przepisem na tiramisu, powoli polej mieszaniną zawierającą żółtko jajka, używając łopatki do rozprowadzenia jej w miejscach, gdzie są przerwy.</li>
+                        <li>Następnie posyp trochę proszku kakao na wierzch, aby był całkowicie pokryty, przed startym kawałkiem gorzkiej czekolady (możesz nawet po prostu grubo go posiekać, dodając go oszczędnie do warstwy).</li>
+                        <li>Teraz powtórz krok 8, tworząc kolejną warstwę biszkoptów Savoiardi maczanych w kawie, zanim je zalejesz białą mieszanką.</li>
+                        <li>Posyp kakao na wierzchu, dodaj ponownie startą czekoladę, a następnie umieść swoje dzieło według tego autentycznego przepisu na tiramisu w lodówce na całą noc.</li>
+                        <li>Zostaw tiramisu w lodówce do stężenia przez maksymalnie 24 godziny dla najlepszych efektów. Im dłużej zostawisz, tym lepiej się zetnie!</li>
+                    </ol>
+                </section>
+            </div>    
+        </article>
+    </div>
 </main>
 
 <footer class="fatfooter">

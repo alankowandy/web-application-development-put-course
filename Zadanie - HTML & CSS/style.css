@@ -13,7 +13,7 @@
 }
 
 .title span {
-    margin: 0 10px; /* Add space between text and flags */
+    margin: 0 10px;
 }
 
 .flaga {
@@ -43,7 +43,8 @@ nav {
     box-sizing: border-box;
 }
 
-.menu ul {
+/* Dziecko elementu */
+.menu > ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -79,8 +80,73 @@ nav {
     transition: color 0.5s;
 }
 
+body {
+    margin: 5;
+    padding: 0;
+    font-family: Italian;
+    background-color: #F4F5F0;
+}
+
+.aktualnosci-kafelki {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.kafelek {
+    width: 26%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.kafelek:hover, .kafelek:focus, .kafelek:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.kafelek img {
+    width: 100%;
+    height: 270px;
+    border-bottom: 1px solid #ddd;
+}
+
+.kafelek a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.kafelek h2 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.kafelek p {
+    margin: 0 10px 10px;
+}
+
+.tekst {
+    padding: 0px 20px 10px 20px;
+    text-align: justify;
+}
+
+.tekst h2 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 .ulubione-dania {
-    /* background-color: #f9f9f9; */
     border-radius: 10px;
     padding: 10px;
     font-family: Italian;
@@ -92,8 +158,6 @@ nav {
 }
 
 .danie {
-    /* display: flex;
-    align-items: center; */
     background-color: #f9f9f9;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -115,8 +179,8 @@ nav {
 
 .danie a {
     text-decoration: none;
-    color: inherit; /* Inherit the color from the parent */
-    display: flex; /* Make the anchor tag a block-level element */
+    color: inherit;
+    display: flex;
     align-items: center;
 }
 
@@ -141,91 +205,25 @@ nav {
     font-family: Italian;
 }
 
-body {
-    margin: 5;
-    padding: 0;
-    font-family: Italian;
-    background-color: #F4F5F0;
-}
-
-.news-slider {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
-.slider-item {
-    width: 26%; /* Adjust the width as needed */
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden; /* Ensure rounded corners are applied */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-}
-
-.slider-item:hover, .slider-item:focus, .slider-item:active {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.slider-item img {
-    width: 100%;
-    height: 270px;
-    border-bottom: 1px solid #ddd; /* Optional: Add a border between image and text */
-}
-
-.slider-item a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.slider-item h2 {
-    font-size: 18px;
-    margin: 10px;
-}
-
-.slider-item p {
-    margin: 0 10px 10px;
-}
-
-.tekst {
-    padding: 0px 20px 10px 20px;
-    text-align: justify;
-}
-
-.tekst h2 {
-    font-size: 24px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.share-favorite-meal {
+.formularz {
     background-color: #F4F5F0;
     border-radius: 10px;
     padding: 0px 20px 20px 20px;
     font-family: Italian;
 }
 
-.share-favorite-meal h2 {
+.formularz h2 {
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.share-favorite-meal label {
+.formularz label {
     display: block;
     margin-bottom: 8px;
 }
 
-.share-favorite-meal input {
+.formularz input, .formularz select {
     width: 20%;
     padding: 10px;
     margin-bottom: 15px;
@@ -233,18 +231,20 @@ body {
     border-radius: 5px;
 }
 
-.share-favorite-meal button {
+.formularz button {
     background-color: #008C45;
-    color: #fff;
-    padding: 12px 20px;
+    color: #F4F5F0;
+    font-family: Italian;
+    padding: 10px 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.share-favorite-meal button:hover {
-    background-color: #006634;
+.formularz button:hover {
+    animation: tada; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.8s; /* don't forget to set a duration! */
 }
 
 .fatfooter {
@@ -257,7 +257,7 @@ body {
 }
 
 .kontakt {
-    margin-top: 15px; /* Add some top margin to the kontakt div */
+    margin-top: 15px;
 }
 
 .kontakt a {
@@ -272,20 +272,20 @@ body {
 .social-media {
     display: flex;
     justify-content: center;
-    margin-top: 10px; /* Add some top margin to the social-media div */
+    margin-top: 10px;
 }
 
 .social-media a {
-    margin: 0 10px; /* Add margin to each social media link for spacing */
+    margin: 0 10px;
 }
 
 .social-media img {
-    width: 30px; /* Adjust the width of the social media icons */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 50%; /* Make the icons circular */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .social-media img:hover {
-    transform: scale(1.2); /* Enlarge the icon on hover */
+    transform: scale(1.2);
 }
