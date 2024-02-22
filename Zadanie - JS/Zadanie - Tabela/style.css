@@ -1,0 +1,71 @@
+/* styles.css */
+
+body {
+    background-color: #e6e6fa; /* Jasny kolor fioletowy */
+    text-align: center;
+}
+
+/* Styl dla tabeli */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto; /* Odstęp od góry i dołu, auto ustawia tabelę na środku */
+}
+
+/* Styl dla nagłówków (th) i komórek (td) */
+th, td {
+    border: 1px solid #ddd; /* Grubość i styl obramowania komórek */
+    padding: 8px; /* Wewnętrzny odstęp w komórkach */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+/* Dostosowanie szerokości trzeciej kolumny (Actions) */
+th:nth-child(3),
+td:nth-child(3) {
+    width: 235px; /* Dostosuj szerokość według potrzeb */
+}
+
+/* Styl dla nagłówków tabeli */
+th {
+    background-color: #f2f2f2; /* Kolor tła nagłówków */
+}
+
+/* Styl dla parzystych wierszy */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Kolor tła parzystych wierszy */
+}
+
+/* Styl dla nieparzystych wierszy */
+tr:nth-child(odd) {
+    background-color: #e5e5e5; /* Kolor tła nieparzystych wierszy */
+}
+
+/* Styl dla przycisków "Delete", "Move Up" i "Move Down" */
+.delete-btn, .up-btn, .down-btn {
+    cursor: pointer; /* Kursor wskazujący na możliwość interakcji */
+    border: none; /* Brak obramowania */
+    padding: 5px 10px; /* Wewnętrzny odstęp przycisków */
+    margin: 2px; /* Zewnętrzny margines przycisków */
+    border-radius: 3px; /* Zaokrąglenie narożników przycisków */
+}
+
+/* Styl dla przyciska "Add Row" */
+.add-btn {
+    margin-top: 10px; /* Górny margines przycisku */
+    padding: 8px 16px; /* Wewnętrzny odstęp przycisku */
+    background-color: #4CAF50; /* Zielony kolor tła przycisku */
+    color: white; /* Biały kolor tekstu */
+    border: none; /* Brak obramowania */
+    border-radius: 4px; /* Zaokrąglenie narożników przycisku */
+    cursor: pointer; /* Kursor wskazujący na możliwość interakcji */
+    margin: auto; /* Centralizacja przycisku */
+}
+
+/* Styl dla informacji o liczbie wierszy */
+#rowCount {
+    font-size: 16px; /* Rozmiar czcionki */
+    margin-top: 10px; /* Górny margines */
+    color: #333; /* Kolor tekstu */
+    margin: auto; /* Centralizacja tekstu */
+    padding: 10px; /* Wewnętrzny odstęp */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title> <!-- Tytuł strony -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Tabela, która będzie edytowana -->
+<table id="myTable">
+    <thead>
+        <tr>
+            <th>ID</th> <!-- Kolumna identyfikatora -->
+            <th>Name</th> <!-- Kolumna nazwy -->
+            <th>Actions</th> <!-- Kolumna akcji -->
+        </tr>
+    </thead>
+    <tbody></tbody> <!-- Brak wierszy tutaj, będą dodawane dynamicznie -->
+</table>
+
+<!-- Przycisk do dodawania nowego wiersza -->
+<button class="add-btn" onclick="addRow()">Add Row</button>
+
+<!-- Informacja o liczbie wierszy -->
+<p id="rowCount">Number of Rows: 0</p>
+
+<script>
+    // Wywołanie funkcji addRow, aby dodać dwa pierwsze wiersze
+    addRow('Pierwszy wpis');
+    addRow('Drugi wpis');
+</script>
+
+</body>
+</html>

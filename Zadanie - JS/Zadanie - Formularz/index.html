@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Ramka błędów -->
+  <div id="errorFrame" class="error-frame" style="display:none;">
+    <p class="error" id="errorList"></p>
+  </div>
+
+  <!-- Kontener formularza -->
+  <div class="container">
+    <h2>Formularz</h2>
+
+    <!-- Formularz rejestracyjny -->
+    <form id="registrationForm">
+      <ul>
+        <li>
+          <label for="name">Imię i Nazwisko:</label>
+          <input type="text" id="name" name="name" onblur="blurFunction()">
+          <span id="nameStar" class="error-star"></span>
+        </li>
+
+        <li>
+          <label for="email">Adres Email:</label>
+          <input type="email" id="email" name="email" onblur="blurFunction()">
+          <span id="emailStar" class="error-star"></span>
+        </li>
+
+        <li>
+          <label for="dob">Data Urodzenia:</label>
+          <input type="date" id="dob" name="dob" onblur="blurFunction()">
+          <span id="dobStar" class="error-star"></span>
+        </li>
+
+        <li>
+          <label for="password">Hasło (minimum 8 znaków, przynajmniej 1 cyfra):</label>
+          <input type="password" id="password" name="password" onblur="blurFunction()">
+          <span id="passwordStar" class="error-star"></span>
+        </li>
+
+        <li>
+          <label for="confirmPassword">Powtórz Hasło:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" onblur="blurFunction()">
+          <span id="confirmPasswordStar" class="error-star"></span>
+        </li>
+
+        <li>
+          <label for="description">Opis (maksymalnie 20 znaków):</label>
+          <input type="text" id="description" name="description" maxlength="20" onblur="blurFunction()">
+          <span id="descriptionStar" class="error-star"></span>
+        </li>
+      </ul>
+
+      <!-- Lista błędów ogólna -->
+      <p class="error" id="errorList"></p>
+
+      <!-- Przycisk rejestracji -->
+      <button type="button" onclick="validateForm()">Zarejestruj się</button>
+    </form>
+  </div>
+
+</body>
+</html>

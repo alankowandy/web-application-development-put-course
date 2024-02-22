@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Italian;
+  src: url(Semplicita/Semplicita\ Light.otf);
+}
+
+body {
+  font-family: Italian;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6e6fa; /* Jasny kolor fioletowy */
+  text-align: center; /* Wyśrodkowanie tekstu w obrębie body */
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  text-align: left; /* Wyrównanie tekstu w obrębie elementów listy do lewej */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left; /* Wyrównanie etykiet do lewej */
+}
+
+input,
+textarea {
+  width: 93%; /* Pełna szerokość dla elementów input i textarea */
+  box-sizing: border-box; /* Włączenie paddingu i bordera w całkowitą szerokość elementu */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+.error-frame {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #ffcccc; /* Jasny czerwony kolor tła dla komunikatów błędów */
+  border: 1px solid #ff0000; /* Czerwona obwódka ramki */
+  margin-bottom: 20px; /* Margines oddzielający ramkę błędów od formularza */
+  display: none; /* Domyślnie ukryta ramka błędów */
+  position: absolute;
+  top: 0;
+}
+
+.error-star {
+  color: red; /* Ustawienie koloru gwiazdki na czerwony */
+  margin-left: 5px; /* Dostosowanie odstępu między polem input a gwiazdką */
+}
