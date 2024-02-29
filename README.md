@@ -1,6 +1,6 @@
 # Web-application-development
 
-Welcome to the Web Application Development course!
+Respository created for the Web Application Development course on the 5th semester on computer science's major.
 
 Tasks Overview:
 
